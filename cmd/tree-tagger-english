@@ -2,9 +2,9 @@
 
 # Set these paths appropriately
 
-BIN=/Users/atreat/Downloads/tree-tagger/bin
-CMD=/Users/atreat/Downloads/tree-tagger/cmd
-LIB=/Users/atreat/Downloads/tree-tagger/lib
+BIN=/Users/atreat/dev/moses/tree-tagger/bin
+CMD=/Users/atreat/dev/moses/tree-tagger/cmd
+LIB=/Users/atreat/dev/moses/tree-tagger/lib
 
 OPTIONS="-token -lemma -sgml"
 
