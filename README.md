@@ -20,7 +20,7 @@ wrong.
 The resultant tibetan.par parameter file was generated with this command:
 
 ```
-bin/train-tree-tagger -utf8 tibetan/2016-04-30-classical-lexicon.txt tibetan/tibetan_pos_tags.txt tibetan/collection_17.txt lib/tibetan-utf8.par
+bin/train-tree-tagger -st sent -utf8 tibetan/2016-04-30-classical-lexicon.txt tibetan/tibetan_pos_tags.txt tibetan/collection_17.txt lib/tibetan-utf8.par
 ```
 
 To test:

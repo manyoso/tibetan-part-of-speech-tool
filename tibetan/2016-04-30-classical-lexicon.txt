@@ -11,8 +11,7 @@
 7	numeral -
 8	numeral -
 9	numeral -
-.	SENT -
-།	punc -
+།	sent -
 ༑	punc -
 ཀ	d.det -	n.count -	n.rel -	skt -
 ཀ་	d.det -	n.count -	n.rel -
