@@ -14,18 +14,33 @@ Tree Tagger tool from http://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/
 
 The lexicon, corpus, and enumeration of tags are in the tibetan/ directory and come from
 http://larkpie.net/tibetancorpus/ courtesy of Dr. Nathan Hill.  These documents needed to be edited
-to remove blank lines and add a end-of-sentence tag to the lexicon of '.' that is likely just. plain.
-wrong.
+to remove blank lines and add a end-of-sentence tag to the lexicon of '།'
 
-The resultant tibetan.par parameter file was generated with this command:
+### Syllable Tagger
+The resultant tibetan-syllable-utf8.par parameter file was generated with this command:
 
 ```
-bin/train-tree-tagger -st sent -utf8 tibetan/2016-04-30-classical-lexicon.txt tibetan/tibetan_pos_tags.txt tibetan/collection_17.txt lib/tibetan-utf8.par
+bin/train-tree-tagger -st sent -utf8 tibetan/2016-04-30-syllables-lexicon.txt tibetan/tibetan-syllables-tags.txt tibetan/2016-04-30-syllables-training.txt lib/tibetan-syllables-utf8.par
 ```
 
 To test:
 
-```cat tibetan/test.txt | cmd/tree-tagger-tibetan```
+```
+cat tibetan/test/syllables.txt | cmd/tree-tagger-tibetan-syllables
+```
+
+### POS Tagger
+The resultant tibetan-utf8.par parameter file was generated with this command:
+
+```
+bin/train-tree-tagger -st sent -utf8 tibetan/2016-04-30-pos-lexicon.txt tibetan/tibetan-pos-tags.txt tibetan/2016-04-30-pos-training.txt lib/tibetan-utf8.par
+```
+
+To test:
+
+```
+cat tibetan/test/pos.txt | cmd/tree-tagger-tibetan
+```
 
 ### Dedication
 
